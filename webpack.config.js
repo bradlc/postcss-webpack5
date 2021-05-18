@@ -34,12 +34,12 @@ module.exports = {
                       node.replaceWith(postcss.comment({ text: contents }))
                     })
 
-                    result.messages.push({
-                      plugin: 'plugin',
-                      type: 'dependency',
-                      file,
-                      parent: result.opts.from,
-                    })
+                    // result.messages.push({
+                    //   plugin: 'plugin',
+                    //   type: 'dependency',
+                    //   file,
+                    //   parent: result.opts.from,
+                    // })
 
                     return root
                   },
